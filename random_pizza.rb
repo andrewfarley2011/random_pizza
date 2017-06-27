@@ -1,7 +1,12 @@
 
 def number_of_pizzas(quantity)
-	quantity
+	puts "#{quantity}"
 end
+
+puts "\n"
+puts "How many? "
+puts "\n"
+quantity = gets.to_i
 
 def crust 
 	crust = ["Thin","Pan","Hand Tossed","Deep Dish"]
