@@ -9,24 +9,34 @@ def crust
 end
 
 def sauce 
-	sauce = ["Marinara","Alfredo","Buffalo","A1","BBQ",""]
+	sauce = ["Marinara","Alfredo","Buffalo","A1","BBQ","No Sauce"]
 end
 
 def cheese
-	cheese = ["Mozzarella","Parmesan","Cheddar","Pepper Jack",""]
+	cheese = ["Mozzarella","Parmesan","Cheddar","Pepper Jack","No Cheese"]
 end
 
 def vegetables 
-	vegetables = ["Onions","Peppers","Mushrooms","Pineapple",""]
+	vegetables = ["Onions","Peppers","Mushrooms","Pineapple","No Vegetables"]
 end
 
 def meats
-	meats = ["Pepperoni","Ham","Sausage","Hamburger","Steak","Chicken"]
+	meats = ["Pepperoni","Ham","Sausage","Hamburger","Steak","Chicken", "No Meat"]
 end
+
+# def pizza
+# 	puts "\n"
+# 	puts pizza = "#{crust.sample} + #{ sauce.sample} + #{ cheese.sample} + #{ vegetables.sample} + #{ meats.sample}" 
+# 	puts "\n"
+# end
 
 def pizza
 	puts "\n"
-	puts pizza = "#{crust.sample} + #{ sauce.sample} + #{ cheese.sample} + #{ vegetables.sample} + #{ meats.sample}" 
+	puts crust.sample
+	puts sauce.sample
+	puts cheese.sample
+	puts vegetables.sample
+	puts meats.sample
 	puts "\n"
 end
 
