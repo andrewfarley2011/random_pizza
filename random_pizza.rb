@@ -1,8 +1,4 @@
 
-def number_of_pizzas(quantity)
-	puts "#{quantity}"
-end
-
 puts "\n"
 puts "How many? "
 puts "\n"
@@ -34,4 +30,12 @@ def pizza
 	puts "\n"
 end
 
-pizza
+x = 1
+
+quantity.times do
+	x = x + 1
+	pizza
+end
+
+puts "Your total is: $#{quantity * 10}"
+puts "\n"
