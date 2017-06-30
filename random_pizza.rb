@@ -20,8 +20,21 @@ def vegetables
 	vegetables = ["Onions","Peppers","Mushrooms","Pineapple","No Vegetables"]
 end
 
+# The following two methods (commented out) were a flawed attempt to be able to add multiple meats.
+
+# def meats_si_o_no
+# 	meats_si_o_no = [1,2]
+# end
+
+# def quantity_meat
+# 	if meats_si_o_no.sample == 1
+# 	quantity_meat = [1,2,3]
+# 	else puts "No Meat"
+# 	end
+# end
+
 def meats
-	meats = ["Pepperoni","Ham","Sausage","Hamburger","Steak","Chicken", "No Meat"]
+	meats = ["Pepperoni","Ham","Sausage","Hamburger","Steak","Chicken","No Meat"]
 end
 
 # def pizza
