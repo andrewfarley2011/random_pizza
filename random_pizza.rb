@@ -43,6 +43,22 @@ end
 # 	puts "\n"
 # end
 
+def tip
+	time = [21,31,41,51].sample
+	#if 20<time<30
+	if time > 20 && time < 30
+		tip = 10.00.to_i
+	#elsif 30<time<40
+	elsif time > 30 && time < 40
+		tip = 8.00.to_i
+	#elsif 40<time<50
+	elsif time > 40 && time < 50
+		tip = 6.00.to_i
+	else
+		tip = 0.00.to_i
+	end
+end
+
 def pizza(x)
 	puts "\n"
 	puts "Pizza number: #{x}"
@@ -61,5 +77,10 @@ quantity.times do
 end
 
 puts "\n"
-puts "Your total is: $#{'%.2f' % (quantity * 9.99 * 1.06)}"
+puts "Price: $#{'%.2f' % (quantity * 9.99 * 1.06)}"
+puts "\n"
+tip_value = tip
+puts "Tip: $#{'%.2f' % tip_value}"
+puts "\n"
+puts "Your total is: $#{'%.2f' % ((quantity * 9.99 * 1.06) + tip_value)}"
 puts "\n"
