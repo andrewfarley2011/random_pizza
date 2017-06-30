@@ -43,22 +43,23 @@ end
 # 	puts "\n"
 # end
 
-def pizza
+def pizza(x)
 	puts "\n"
+	puts "Pizza number: #{x}"
 	puts crust.sample
 	puts sauce.sample
 	puts cheese.sample
 	puts vegetables.sample
 	puts meats.sample
-	puts "\n"
 end
 
-x = 1
+x = 0
 
 quantity.times do
 	x = x + 1
-	pizza
+	pizza(x)
 end
 
-puts "Your total is: $#{quantity * 10}"
+puts "\n"
+puts "Your total is: $#{'%.2f' % (quantity * 9.99 * 1.06)}"
 puts "\n"
